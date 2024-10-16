@@ -20,11 +20,159 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(images/bg-intro-desktop.png);
+  background: url(images/bg-intro-mobile.png);
   background-color: var(--red);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .container{
   display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+  text-align: center;  
+  padding-block: 4rem;
 }
 
+.hero__section{
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.hero__title{
+  font-size: max(1.7rem, 7vw);
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.hero__para{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: hsl(246, 25%, 95%);
+}
+
+aside{
+  background-color: var(--blue);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 1px 0px hsla(249, 10%, 26%, 0.3);
+}
+
+aside p{
+  margin: 0;
+  margin-inline: 3rem;
+  font-weight: 500;
+  color: var(--grayish-blue);
+
+  & span{
+    font-weight: 600;
+    color: hsl(246, 25%, 95%);
+  }
+}
+
+form{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 1px 0px hsla(249, 10%, 26%, 0.3);
+}
+
+input{
+  padding: 1.1rem 0 1rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grayish-blue);
+  outline: none;
+
+  &::placeholder{
+    color: hsl(249, 10%, 40%);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+button{
+  background-color: var(--green);
+  color: hsl(246, 25%, 95%);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding-block: 1rem 0.7rem;
+  box-shadow: 0 4px 1px 0px hsl(154, 59%, 40%);
+  outline: none;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+footer p{
+  color: var(--grayish-blue);
+  font-size: 0.7rem;
+  margin-inline: 0.5rem;
+  margin-block: 0;
+  line-height: 1.7;
+
+  & a{
+    text-decoration: none;
+    color: var(--red);
+    font-weight: 700;
+  }
+}
+
+img{
+  display: none;
+}
+
+form span{
+  display: none;
+}
+
+@media (min-width: 768px){
+
+  body{
+    background: url(images/bg-intro-desktop.png);
+    background-color: var(--red);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .container{
+    max-width: 70rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero__section{
+    width: 47%;
+    text-align: left;
+  }
+
+  .form__container{
+    width: 47%;
+  }
+
+  .hero__title{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  form{
+    padding: 2.5rem;
+  }
+
+  input{
+    padding-left: 2rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+}
