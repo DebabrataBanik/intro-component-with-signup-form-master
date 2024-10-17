@@ -70,7 +70,7 @@ form.addEventListener("submit", e => {
 
   name_inputs.forEach(name => {
     if (name.value === "") {
-      showError(name, `${name.id} cannot be empty`)
+      showError(name, `${name.name} cannot be empty`)
     } else {
       showError(name)
     }

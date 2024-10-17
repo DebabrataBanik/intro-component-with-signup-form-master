@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - [Live Site URl](https://debabratabanik.github.io/intro-component-with-signup-form-master/)
-- [Solution URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-master-I1UOXXTnyR)
 
 ### Built with
 
@@ -39,3 +39,5 @@ Users should be able to:
 
 ### Continued Development
 
+Further refactor the code to make it more readable and maintainable. 
+Also implement the same using React's library `React-hook-form`
