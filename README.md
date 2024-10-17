@@ -22,11 +22,11 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](design/desktop-preview.jpg)
+![alt text](intro_component_using_react/design/desktop-preview.jpg)
 
 ### Links
 
-- [Live Site URl](https://debabratabanik.github.io/intro-component-with-signup-form-master/)
+- [Live Site URl]()
 - [Solution URL](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-master-I1UOXXTnyR)
 
 ### Built with
@@ -34,10 +34,9 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- React Hook Form
 
 ### Continued Development
 
 Further refactor the code to make it more readable and maintainable. 
-Also implement the same using React's library `React-hook-form`
