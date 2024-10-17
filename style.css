@@ -78,16 +78,24 @@ form{
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  gap: 1rem;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 8px 1px 0px hsla(249, 10%, 26%, 0.3);
 }
 
+.input-group{
+  position: relative;
+}
+
 input{
+  width: 100%;
   padding: 1.1rem 0 1rem 1rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   border: 1px solid var(--grayish-blue);
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  font-weight: 600;
   outline: none;
 
   &::placeholder{
@@ -95,6 +103,34 @@ input{
     font-size: 0.9rem;
     font-weight: 600;
   }
+}
+
+input + span{
+  display: none;
+  position: relative;
+  top: -0.8rem;
+  color: var(--red);
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.error{
+  border: 2px solid var(--red);
+}
+.email.error{
+  color: var(--red);
+}
+
+form img{
+  display: none;
+  width: 20px;
+  position: absolute;
+  top: 19px;
+  right: 20px;
+}
+
+.error-msg.visible, .error-icon.visible {
+  display: block;
 }
 
 button{
@@ -106,6 +142,7 @@ button{
   border: none;
   border-radius: 5px;
   padding-block: 1rem 0.7rem;
+  margin-bottom: 1rem;
   box-shadow: 0 4px 1px 0px hsl(154, 59%, 40%);
   outline: none;
   cursor: pointer;
@@ -127,14 +164,6 @@ footer p{
     color: var(--red);
     font-weight: 700;
   }
-}
-
-img{
-  display: none;
-}
-
-form span{
-  display: none;
 }
 
 @media (min-width: 768px){
@@ -171,8 +200,5 @@ form span{
 
   input{
     padding-left: 2rem;
-    color: var(--dark-blue);
-    font-weight: 700;
-    font-size: 0.9rem;
   }
 }

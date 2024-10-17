@@ -17,6 +17,8 @@
 
   <link rel="stylesheet" href="style.css">
 
+
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -37,23 +39,29 @@
       </aside>
 
       <form>
-        <input type="text" class="name" aria-label="first name" placeholder="First Name">
-        <span class="error">First Name cannot be empty</span>
-        <img src="images/icon-error.svg" alt="">
+        <div class="input-group">
+          <input type="text" class="name" aria-label="first name" id="First name" placeholder="First Name">
+          <span class="error-msg"></span>
+          <img src="images/icon-error.svg" alt="Error icon" class="error-icon">
+        </div>
 
-        <input type="text" class="name" aria-label="last name" placeholder="Last Name">
-        <span class="error">Last Name cannot be empty</span>
-        <img src="images/icon-error.svg" alt="">
+        <div class="input-group">
+          <input type="text" class="name" aria-label="last name" id="Last name" placeholder="Last Name">
+          <span class="error-msg"></span>
+          <img src="images/icon-error.svg" alt="Error icon" class="error-icon">
+        </div>
 
+        <div class="input-group">
+          <input type="text" class="email" aria-label="email address" placeholder="Email Address">
+          <span class="error-msg"></span>
+          <img src="images/icon-error.svg" alt="Error icon" class="error-icon">
+        </div>
 
-        <input type="text" class="email" aria-label="email address" placeholder="Email Address">
-        <span class="error">Email cannot be empty</span>
-        <img src="images/icon-error.svg" alt="">
-
-
-        <input type="password" class="password" aria-label="password" placeholder="Password">
-        <span class="error">Password cannot be empty</span>
-        <img src="images/icon-error.svg" alt="">
+        <div class="input-group">
+          <input type="password" class="password" aria-label="password" placeholder="Password">
+          <span class="error-msg"></span>
+          <img src="images/icon-error.svg" alt="Error icon" class="error-icon">
+        </div>
 
         <button class="submit" aria-label="submit to claim free trial">Claim your free trial</button>
         <footer>
@@ -61,6 +69,7 @@
               Services</a></p>
         </footer>
       </form>
+
 
     </div>
 
